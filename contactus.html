@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - NeST Digital</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    padding-top: 90px;
+    background: linear-gradient(135deg,#838585 0%,#5a7ba6 100%);
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    box-shadow: 0 3px 10px rgba(255, 153, 0, 0.15);
+  }
+
+  h2,h4 {
+    font-weight: 700;
+  }
+
+  .page-header {
+    background: linear-gradient(135deg,#57636f 0%,#243f5b 100%);
+    color:rgb(165, 120, 120);
+    padding:60px 0;
+    text-align:center;
+    border-radius:12px;
+    margin-bottom:40px;
+    box-shadow:0 10px 25px rgba(153, 55, 55, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards 0.2s;
+  }
+
+  .contact-card {
+    background:#8b9db7;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.08);
+    transition:0.4s;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+  }
+
+  .contact-card.fade-in {
+    animation: fadeInUp 0.8s forwards;
+  }
+
+  .form-control:focus {
+    border-color:#0066cc;
+    box-shadow:0 0 8px rgba(0,102,204,0.3);
+    transition:0.3s;
+  }
+
+  .btn-primary {
+    background: linear-gradient(90deg,#0066cc,#004080);
+    border:none;
+    font-weight:600;
+    transition:0.3s;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(90deg,#004080,#0066cc);
+    transform: translateY(-2px);
+  }
+
+  footer {
+    background:#004080;
+    color:#f1f5f9;
+    padding:30px 0;
+    margin-top: 40px;
+  }
+
+  footer a {
+    color:#f1f5f9;
+    margin:0 10px;
+    font-size:1.2rem;
+    transition: 0.3s;
+  }
+
+  .contact-info i {
+    color:#0066cc;
+    margin-right:10px;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity:1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.g5uKa9CynKm19aI21jZsMAHaBQ?pid=Api&P=0&h=180" 
+           alt="Bootstrap" width="220" height="50">
+    </a>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="NEST.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Business & Services
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="aerospace.html">Aerospace & Defence</a></li>
+                <li><a class="dropdown-item" href="locomotive.html">Locomotive</a></li>
+                <li><a class="dropdown-item" href="insurance.html">Insurance</a></li>
+                <li><a class="dropdown-item" href="healthcare.html">Healthcare</a></li>
+                <li><a class="dropdown-item" href="banking.html">Banking</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a href="contactus.html">
+              <button type="button" class="btn btn-outline-info">CONTACT-US</button>
+            </a></li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled"></a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="page-header">
+    <h2>Contact NeST Digital</h2>
+    <p>World-class digital solutions and support at your service.</p>
+  </div>
+</div>
+
+<div class="container my-5" id="contact-form">
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="contact-card fade-in" style="animation-delay: 0.4s;">
+        <h4>Get in Touch</h4>
+        <ul class="list-unstyled mb-4 contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> Plot No. 2, CSEZ, Kakkanad, Cochin – 682 037, India</li>
+          <li><i class="fas fa-phone"></i> +91-484-661 4300</li>
+          <li><i class="fas fa-envelope"></i> sales.nestdigital@nestgroup.net</li>
+        </ul>
+
+        <form>
+          <input type="text" class="form-control mb-3" placeholder="Your Name">
+          <input type="email" class="form-control mb-3" placeholder="Your Email">
+          <input type="text" class="form-control mb-3" placeholder="Subject">
+          <textarea class="form-control mb-3" rows="5" placeholder="Message"></textarea>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="contact-card fade-in" style="animation-delay: 0.6s;">
+        <h4>Our Location</h4>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.063438834557!2d76.36254207503724!3d10.01750627302983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080b7fca7c6495%3A0x5c6cc61021571755!2sNeST%20Digital%2C%20NeST%20Tech%20Park!5e0!3m2!1sen!2sin!4v1733257600000!5m2!1sen!2sin"
+          width="100%" height="350" style="border:0;" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center mt-4">
+  <a href="NEST.html" class="btn btn-dark px-4 py-2">
+    ← Back to Home
+  </a>
+</div>
+
+<footer class="text-center">
+  <p>&copy; 2025 NeST Digital. All rights reserved.</p>
+  <div>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
